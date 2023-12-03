@@ -127,8 +127,8 @@ Mean Squared Error on Test Set: 0.041384320706129074
 # Results
 Thus, my model is trained to predict the top k movies and produce a preliminary score for each movie. The following are examples of the top unviewed movies of users. \
 Top 10 films for user_id = 500:
-![alt text](figures/user_id_500.png)
+![alt text](figures/user_id_500.png)\
 Top 3 films for user_id = 15:
-![alt text](figures/user_id_15.png)
+![alt text](figures/user_id_15.png)\
 Top 5 films for user_id = 69:
 ![alt text](figures/user_id_69.png)
