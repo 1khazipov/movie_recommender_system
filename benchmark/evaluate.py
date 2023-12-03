@@ -34,7 +34,7 @@ class EmbeddingRecommenderModel(nn.Module):
         item_features: number of features for items
         embedding_size: size of the embedding
     """
-    def __init__(self, user_size, item_size, users_features, item_features, embedding_size=64):
+    def __init__(self, user_size, item_size, users_features, item_features, embedding_size=16):
         super(EmbeddingRecommenderModel, self).__init__()
         self.user_embedding = nn.Embedding(user_size, embedding_size)
         self.item_embedding = nn.Embedding(item_size, embedding_size)
@@ -98,6 +98,7 @@ def main():
     # calculate and print the Mean Squared Error (MSE) on the test set
     mse = mean_squared_error(targets, predictions)
     print(f'Mean Squared Error on Test Set: {mse}')
+
 
 if __name__ == '__main__':
     main()
